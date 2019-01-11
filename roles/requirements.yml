@@ -1,0 +1,15 @@
+
+- name: postgresql
+  src: https://github.com/klewan/ansible-role-postgresql.git
+  scm: git
+  #version: develop
+  #version: feature/init
+  #version: master
+
+- name: postgresql-role-transition
+  src: https://github.com/klewan/ansible-role-postgresql-role-transition.git
+  scm: git
+  #version: develop
+  #version: feature/init
+  #version: master
+

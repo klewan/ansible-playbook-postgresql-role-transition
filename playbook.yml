@@ -1,0 +1,8 @@
+---
+- name: Perform PostgreSQL server role transition (switchover/failover)
+  hosts: pg-servers
+  become: true
+  become_user: '{{ postgresql_user }}'
+  roles:
+    - { role: postgresql-role-transition, tags: postgresql-role-transition }
+
